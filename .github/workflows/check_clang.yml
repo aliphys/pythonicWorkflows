@@ -1,0 +1,34 @@
+name: check_clang
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Create Test Directory
+        run: |
+          mkdir -p test
+
+      - name: Download Clang Script
+        run: |
+          cd test
+          curl -O https://raw.githubusercontent.com/aliphys/pythonicWorkflows/blob/main/scripts/check_clang.py
+
+      - name: Run Clang Script
+        run: |
+          cd test
+          python check_clang.py
