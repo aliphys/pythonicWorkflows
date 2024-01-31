@@ -18,7 +18,11 @@ jobs:
         with:
           python-version: '3.10'
 
-      
+      - name: Create Scripts Directory
+        run: |
+          mkdir scripts
+          cd scripts
+
       - name: Download Hello World Script
         run: |
           curl -O https://raw.githubusercontent.com/aliphys/pythonicWorkflows/blob/main/scripts/hello_world.py
