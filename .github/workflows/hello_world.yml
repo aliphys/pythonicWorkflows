@@ -21,11 +21,13 @@ jobs:
       - name: Create Scripts Directory
         run: |
           mkdir -p scripts
-          cd scripts
 
       - name: Download Hello World Script
         run: |
+          cd scripts
           curl -O https://raw.githubusercontent.com/mouredev/Hello-Python/main/Basic/00_helloworld.py
 
       - name: Run Hello World Script
-        run: python hello_world.py
+        run: |
+          cd scripts
+          python hello_world.py
