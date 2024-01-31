@@ -25,7 +25,7 @@ jobs:
 
       - name: Download Hello World Script
         run: |
-          curl -O https://raw.githubusercontent.com/aliphys/pythonicWorkflows/blob/main/scripts/hello_world.py
+          curl -O https://raw.githubusercontent.com/mouredev/Hello-Python/main/Basic/00_helloworld.py
 
       - name: Run Hello World Script
         run: python hello_world.py
