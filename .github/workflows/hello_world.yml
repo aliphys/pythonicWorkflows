@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build:
@@ -25,11 +26,9 @@ jobs:
       - name: Download Hello World Script
         run: |
           cd scripts
-          curl -O https://raw.githubusercontent.com/mouredev/Hello-Python/main/Basic/00_helloworld.py
-          ls
+          curl -O https://raw.githubusercontent.com/jessica-jorgenson/CSCI117/master/HelloWorld.py
 
       - name: Run Hello World Script
         run: |
           cd scripts
-          python 00_helloworld.py
-          ls
+          python HelloWorld.py
