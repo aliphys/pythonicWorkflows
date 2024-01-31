@@ -20,7 +20,7 @@ jobs:
 
       - name: Create Scripts Directory
         run: |
-          mkdir scripts
+          mkdir -p scripts
           cd scripts
 
       - name: Download Hello World Script
