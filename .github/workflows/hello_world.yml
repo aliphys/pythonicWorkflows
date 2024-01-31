@@ -31,5 +31,5 @@ jobs:
       - name: Run Hello World Script
         run: |
           cd scripts
-          python hello_world.py
+          python 00_helloworld.py
           ls
