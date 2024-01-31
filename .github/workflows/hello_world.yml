@@ -26,8 +26,10 @@ jobs:
         run: |
           cd scripts
           curl -O https://raw.githubusercontent.com/mouredev/Hello-Python/main/Basic/00_helloworld.py
+          ls
 
       - name: Run Hello World Script
         run: |
           cd scripts
           python hello_world.py
+          ls
