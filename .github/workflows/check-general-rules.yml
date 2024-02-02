@@ -19,10 +19,11 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Download Clang Script
-        run: |
-          curl -O https://raw.githubusercontent.com/aliphys/pythonicWorkflows/blob/main/scripts/check-general-rules.py
+      #- name: Download Clang Script
+      #  run: |
+      #    curl -O https://raw.githubusercontent.com/aliphys/pythonicWorkflows/blob/main/scripts/check-general-rules.py
 
       - name: Run Clang Script
         run: |
+          cd scripts
           python check-general-rules.py
