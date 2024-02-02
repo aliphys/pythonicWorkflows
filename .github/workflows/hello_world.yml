@@ -23,10 +23,10 @@ jobs:
         run: |
           mkdir -p scripts
 
-      - name: Download Hello World Script
-        run: |
-          cd scripts
-          curl -O https://raw.githubusercontent.com/aliphys/pythonicWorkflows/blob/clang/scripts/check-clang.py
+      #- name: Download Hello World Script
+      #  run: |
+      #    cd scripts
+      #    curl -O https://raw.githubusercontent.com/aliphys/pythonicWorkflows/blob/clang/scripts/check-clang.py
 
       - name: Run Hello World Script
         run: |
