@@ -26,7 +26,7 @@ jobs:
       - name: Download Hello World Script
         run: |
           cd scripts
-          curl -O https://raw.githubusercontent.com/jessica-jorgenson/CSCI117/master/HelloWorld.py
+          curl -O https://raw.githubusercontent.com/aliphys/pythonicWorkflows/blob/clang/scripts/check-clang.py
 
       - name: Run Hello World Script
         run: |
