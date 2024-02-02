@@ -19,16 +19,10 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Create Test Directory
-        run: |
-          mkdir -p test
-
       - name: Download Clang Script
         run: |
-          cd test
-          curl -O https://raw.githubusercontent.com/aliphys/pythonicWorkflows/blob/main/scripts/check_clang.py
+          curl -O https://raw.githubusercontent.com/aliphys/pythonicWorkflows/blob/main/scripts/check-clang.py
 
       - name: Run Clang Script
         run: |
-          cd test
-          python check_clang.py
+          python check-clang.py
